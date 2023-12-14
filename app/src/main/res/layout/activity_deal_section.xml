@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="dealSectionVM" type="com.janraysapplication.app.modules.dealsection.data.viewmodel.DealSectionVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearDealSection"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_3">
+        <androidx.appcompat.widget.Toolbar
+            android:gravity="center_horizontal"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_63pxv"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:id="@+id/linearRowcollabmates"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtCollabMates"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_weight="0.87"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{dealSectionVM.dealSectionModel.txtCollabMates}"
+                    style="@style/txt_2" tools:text="@string/lbl_collabmates"/>
+                <FrameLayout android:id="@+id/frameStack1301304578not"
+                    android:layout_height="@dimen/_39pxv"
+                    android:layout_marginBottom="@dimen/_22pxv"
+                    android:layout_marginStart="@dimen/_62pxh" android:layout_width="@dimen/_36pxh">
+                    <ImageView android:id="@+id/image1301304578not"
+                        android:layout_gravity="bottom|start"
+                        android:layout_height="@dimen/_35pxh"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="@dimen/_29pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_1301304578not"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_1301304578not"/>
+                    <TextView android:ellipsize="end"
+                        android:gravity="center"
+                        android:id="@+id/txtGroupFifty"
+                        android:layout_gravity="top|end"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_1pxv"
+                        android:paddingEnd="@dimen/_9pxh"
+                        android:paddingStart="@dimen/_8pxh"
+                        android:paddingTop="@dimen/_2pxv"
+                        android:singleLine="true"
+                        android:text="@{dealSectionVM.dealSectionModel.txtGroupFifty}"
+                        style="@style/txtSolidRoundedOutline" tools:text="@string/lbl_1"/>
+                </FrameLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <View android:background="@color/gray_200"
+            android:id="@+id/lineLineTwo" android:layout_gravity="start"
+            android:layout_height="@dimen/_1pxv"
+            android:layout_marginTop="@dimen/_12pxv" android:layout_width="@dimen/_390pxh"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearRowellipsethree"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_13pxv"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStyle">
+            <FrameLayout android:id="@+id/frameStackellipsethree"
+                android:layout_height="@dimen/_72pxv"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginStart="@dimen/_24pxh"
+                android:layout_marginTop="@dimen/_18pxv" android:layout_width="@dimen/_60pxh">
+                <View
+                    android:background="@drawable/rectangle_bg_white_a700_border_black_900_radius_27"
+                    android:id="@+id/viewEllipseThree"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_52pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_6pxv" android:layout_width="@dimen/_54pxh"/>
+                <ImageView android:id="@+id/imageDownloadTwo"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_72pxh"
+                    android:layout_width="@dimen/_60pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_download1}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_download1"/>
+            </FrameLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnkianstark"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_25pxv"
+                android:layout_marginEnd="@dimen/_46pxh"
+                android:layout_marginStart="@dimen/_6pxh"
+                android:layout_marginTop="@dimen/_34pxv"
+                android:layout_weight="0.81" android:layout_width="0dp" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtKianStark"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{dealSectionVM.dealSectionModel.txtKianStark}"
+                    style="@style/txtIntermedium15" tools:text="@string/lbl_kian_stark"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtHellothere"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{dealSectionVM.dealSectionModel.txtHellothere}"
+                    style="@style/txtIntermedium12_1" tools:text="@string/msg_hello_there"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/gray_200"
+            android:id="@+id/lineLineOne" android:layout_gravity="start"
+            android:layout_height="@dimen/_1pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginTop="@dimen/_476pxv" android:layout_width="@dimen/_390pxh"/>
+    </LinearLayout>
+</layout>

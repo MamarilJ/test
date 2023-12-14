@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listrectanglefortyoneRowModel" type="com.janraysapplication.app.modules.profileporfolio.data.model.ListrectanglefortyoneRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowrectanglefortyone"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <FrameLayout android:id="@+id/frameStackrectanglefortyone"
+            android:layout_height="@dimen/_104pxv" android:layout_width="@dimen/_113pxh">
+            <View android:background="@color/bluegray_100"
+                android:id="@+id/viewRectangleFortyOne"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_100pxv"
+                android:layout_marginTop="@dimen/_4pxv" android:layout_width="@dimen/_113pxh"/>
+            <ImageView android:id="@+id/imageProject2021060"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_104pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_width="@dimen/_112pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_project2021060}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_project2021060"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/frameStackrectanglefortytwo"
+            android:layout_height="@dimen/_104pxv"
+            android:layout_marginStart="@dimen/_24pxh" android:layout_width="@dimen/_113pxh">
+            <View android:background="@color/bluegray_100"
+                android:id="@+id/viewRectangleFortyTwo"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_100pxv"
+                android:layout_marginTop="@dimen/_4pxv" android:layout_width="@dimen/_113pxh"/>
+            <ImageView android:id="@+id/imageProject2021071"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_104pxh"
+                android:layout_width="@dimen/_113pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_project2021071}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_project2021071"/>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

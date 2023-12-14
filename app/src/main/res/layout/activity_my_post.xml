@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="myPostVM" type="com.janraysapplication.app.modules.mypost.data.viewmodel.MyPostVM"/>
+    </data>
+    <LinearLayout android:gravity="start" android:id="@+id/linearMypost"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_3">
+        <androidx.appcompat.widget.Toolbar
+            android:gravity="center_horizontal"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_34pxh"
+            android:layout_marginStart="@dimen/_34pxh"
+            android:layout_marginTop="@dimen/_67pxv"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:id="@+id/linearRowcollabmates"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtCollabMates"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:layout_weight="0.89"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{myPostVM.myPostModel.txtCollabMates}"
+                    style="@style/txt_2" tools:text="@string/lbl_collabmates"/>
+                <ImageView android:id="@+id/image1301304578not"
+                    android:layout_height="@dimen/_35pxh"
+                    android:layout_marginBottom="@dimen/_22pxv"
+                    android:layout_marginStart="@dimen/_52pxh"
+                    android:layout_width="@dimen/_29pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_1301304578not"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_1301304578not"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <View android:background="@color/gray_200"
+            android:id="@+id/lineLineTwo"
+            android:layout_height="@dimen/_1pxv"
+            android:layout_marginTop="@dimen/_12pxv" android:layout_width="@dimen/_390pxh"/>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnofferedtasks"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_34pxh"
+            android:layout_marginStart="@dimen/_34pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearRowofferedtasks"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_14pxh"
+                android:layout_marginStart="@dimen/_14pxh"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylegray_200cornerRadius">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtOfferedtasks"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_9pxv"
+                    android:layout_marginStart="@dimen/_27pxh"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:layout_weight="0.38"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{myPostVM.myPostModel.txtOfferedtasks}"
+                    style="@style/txtIntersemibold13_1" tools:text="@string/lbl_offered_tasks"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnMyPosts"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginEnd="@dimen/_7pxh"
+                    android:layout_marginStart="@dimen/_25pxh"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_weight="0.62"
+                    android:layout_width="0dp"
+                    android:paddingBottom="@dimen/_4pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_4pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_my_posts"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded_1" tools:text="@string/lbl_my_posts"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowellipseone"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_132pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <FrameLayout android:id="@+id/frameStackellipseone"
+                    android:layout_height="@dimen/_60pxv" android:layout_width="@dimen/_41pxh">
+                    <View
+                        android:background="@drawable/rectangle_bg_white_a700_border_black_900_radius_20_5"
+                        android:id="@+id/viewEllipseOne"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_41pxh"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginTop="@dimen/_7pxv" android:layout_width="@dimen/_41pxh"/>
+                    <ImageView android:id="@+id/imageDownloadOne"
+                        android:layout_gravity="end"
+                        android:layout_height="@dimen/_60pxh"
+                        android:layout_marginEnd="@dimen/_1pxh"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_width="@dimen/_37pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_download1"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_download1"/>
+                </FrameLayout>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumnkianstark"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_15pxv"
+                    android:layout_marginStart="@dimen/_3pxh"
+                    android:layout_marginTop="@dimen/_11pxv"
+                    android:layout_weight="0.78"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtKianStark"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{myPostVM.myPostModel.txtKianStark}"
+                        style="@style/txtIntermedium15" tools:text="@string/lbl_kian_stark"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtJustnow"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{myPostVM.myPostModel.txtJustnow}"
+                        style="@style/txtIntermedium11" tools:text="@string/lbl_just_now"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/image1494031"
+                    android:layout_height="@dimen/_19pxh"
+                    android:layout_marginBottom="@dimen/_27pxv"
+                    android:layout_marginStart="@dimen/_3pxh"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_width="@dimen/_25pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_1494031"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_1494031"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearColumnphpcounter"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtPhpCounter"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_11pxh"
+                    android:layout_marginStart="@dimen/_11pxh"
+                    android:layout_marginTop="@dimen/_15pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{myPostVM.myPostModel.txtPhpCounter}"
+                    style="@style/txtInterextrabold17" tools:text="@string/lbl_php_150"/>
+                <TextView android:gravity="start"
+                    android:id="@+id/txtLanguage"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_62pxh"
+                    android:layout_marginStart="@dimen/_13pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{myPostVM.myPostModel.txtLanguage}"
+                    style="@style/txtIntermedium17" tools:text="@string/msg_looking_for_a_s"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtDeadline060"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_16pxv"
+                    android:layout_marginEnd="@dimen/_11pxh"
+                    android:layout_marginStart="@dimen/_11pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{myPostVM.myPostModel.txtDeadline060}"
+                    style="@style/txtIntermedium12" tools:text="@string/msg_deadline_06_0"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnViewSubmissionsOne"
+                android:layout_gravity="end"
+                android:layout_height="@dimen/_30pxv"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_29pxv"
+                android:layout_width="@dimen/_149pxh"
+                android:paddingBottom="@dimen/_5pxv"
+                android:paddingEnd="@dimen/_7pxh"
+                android:paddingStart="@dimen/_11pxh"
+                android:paddingTop="@dimen/_5pxv"
+                android:singleLine="true"
+                android:text="@string/msg_view_submission"
+                android:textAllCaps="false"
+                style="@style/btnSolidRoundedOutline_1" tools:text="@string/msg_view_submission"/>
+        </LinearLayout>
+        <View android:background="@color/gray_200"
+            android:id="@+id/lineLineOne"
+            android:layout_height="@dimen/_1pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginTop="@dimen/_136pxv" android:layout_width="@dimen/_390pxh"/>
+    </LinearLayout>
+</layout>

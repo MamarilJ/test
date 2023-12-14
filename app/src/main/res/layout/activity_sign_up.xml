@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="signUpVM" type="com.janraysapplication.app.modules.signup.data.viewmodel.SignUpVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearSignUp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtCollabMates"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_36pxh"
+            android:layout_marginStart="@dimen/_36pxh"
+            android:layout_marginTop="@dimen/_194pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{signUpVM.signUpModel.txtCollabMates}"
+            style="@style/txt" tools:text="@string/lbl_collabmates"/>
+        <EditText
+            android:background="@drawable/rectangle_bg_white_a700_border_black_900_radius_5"
+            android:ellipsize="end" android:hint="@string/lbl_name"
+            android:id="@+id/etGroupSixtyNine" android:inputType="text"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_36pxh"
+            android:layout_marginStart="@dimen/_36pxh"
+            android:layout_marginTop="@dimen/_36pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_7pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_19pxh"
+            android:paddingTop="@dimen/_7pxv" android:singleLine="true"
+            android:text="@={signUpVM.signUpModel.etGroupSixtyNineValue}"
+            android:textColorHint="@color/black_900_87"
+            style="@style/etSolidRoundedOutline" tools:ignore="Autofill"/>
+        <EditText
+            android:background="@drawable/rectangle_bg_white_a700_border_black_900_radius_5"
+            android:ellipsize="end"
+            android:hint="@string/lbl_email_address"
+            android:id="@+id/etGroupSeventyOne"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_36pxh"
+            android:layout_marginStart="@dimen/_36pxh"
+            android:layout_marginTop="@dimen/_37pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_7pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_19pxh"
+            android:paddingTop="@dimen/_7pxv" android:singleLine="true"
+            android:text="@={signUpVM.signUpModel.etGroupSeventyOneValue}"
+            android:textColorHint="@color/black_900_87"
+            style="@style/etSolidRoundedOutline" tools:ignore="Autofill"/>
+        <EditText
+            android:background="@drawable/rectangle_bg_white_a700_border_black_900_radius_5"
+            android:ellipsize="end" android:hint="@string/lbl_password"
+            android:id="@+id/etGroupSeventy"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_36pxh"
+            android:layout_marginStart="@dimen/_36pxh"
+            android:layout_marginTop="@dimen/_39pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_7pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_19pxh"
+            android:paddingTop="@dimen/_7pxv" android:singleLine="true"
+            android:text="@={signUpVM.signUpModel.etGroupSeventyValue}"
+            android:textColorHint="@color/black_900_87"
+            style="@style/etSolidRoundedOutline" tools:ignore="Autofill"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnSignUp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_38pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_36pxh"
+            android:layout_marginStart="@dimen/_36pxh"
+            android:layout_marginTop="@dimen/_36pxv"
+            android:layout_width="@dimen/_173pxh"
+            android:paddingBottom="@dimen/_8pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_8pxv" android:singleLine="true"
+            android:text="@string/lbl_sign_up"
+            android:textAllCaps="false"
+            style="@style/btnSolidRoundedOutline" tools:text="@string/lbl_sign_up"/>
+    </LinearLayout>
+</layout>

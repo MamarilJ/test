@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="logInVM" type="com.janraysapplication.app.modules.login.data.viewmodel.LogInVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearLogIn"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtCollabMates"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_36pxh"
+            android:layout_marginStart="@dimen/_36pxh"
+            android:layout_marginTop="@dimen/_249pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{logInVM.logInModel.txtCollabMates}"
+            style="@style/txt" tools:text="@string/lbl_collabmates"/>
+        <EditText
+            android:background="@drawable/rectangle_bg_white_a700_border_black_900_radius_5"
+            android:ellipsize="end"
+            android:hint="@string/lbl_email_address"
+            android:id="@+id/etGroupSeventyThree"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_36pxh"
+            android:layout_marginStart="@dimen/_36pxh"
+            android:layout_marginTop="@dimen/_57pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_7pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_19pxh"
+            android:paddingTop="@dimen/_7pxv" android:singleLine="true"
+            android:text="@={logInVM.logInModel.etGroupSeventyThreeValue}"
+            android:textColorHint="@color/black_900_87"
+            style="@style/etSolidRoundedOutline" tools:ignore="Autofill"/>
+        <EditText
+            android:background="@drawable/rectangle_bg_white_a700_border_black_900_radius_5"
+            android:ellipsize="end" android:hint="@string/lbl_password"
+            android:id="@+id/etGroupSeventyTwo"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_36pxh"
+            android:layout_marginStart="@dimen/_36pxh"
+            android:layout_marginTop="@dimen/_39pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_7pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_19pxh"
+            android:paddingTop="@dimen/_7pxv" android:singleLine="true"
+            android:text="@={logInVM.logInModel.etGroupSeventyTwoValue}"
+            android:textColorHint="@color/black_900_87"
+            style="@style/etSolidRoundedOutline" tools:ignore="Autofill"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnLogIn"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_42pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_36pxh"
+            android:layout_marginStart="@dimen/_36pxh"
+            android:layout_marginTop="@dimen/_39pxv"
+            android:layout_width="@dimen/_173pxh"
+            android:paddingBottom="@dimen/_10pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_10pxv" android:singleLine="true"
+            android:text="@string/lbl_log_in"
+            android:textAllCaps="false"
+            style="@style/btnSolidRoundedOutline" tools:text="@string/lbl_log_in"/>
+    </LinearLayout>
+</layout>
